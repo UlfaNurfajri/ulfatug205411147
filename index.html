@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>www.stsrdvisi.ac.id</title>  
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/stsrd-visi.jpg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/stsrd-visi.jpg">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="style.css?v<?=date('i:s')?>" />
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#more {display: none;}
+</style>
+
+
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header tit-up">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Customer Login</h4>
+				</div>
+				<div class="modal-body customer-box">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+						<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="Login">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email1" placeholder="Name" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-10">
+										<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+											Submit
+										</button>
+										<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane" id="Registration">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" placeholder="Name" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="email" placeholder="Email" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input class="form-control" id="password" placeholder="Password" type="password">
+									</div>
+								</div>
+								<div class="row">							
+									<div class="col-sm-10">
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+											Save &amp; Continue
+										</button>
+										<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light  bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/Logo STSRD_2.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://pmbonline.stsrdvisi.ac.id/" target="_blank">Info PMB</a></li>
+						<li class="nav-item"><a class="nav-link" href="alumni.html">Alumni</a></li>
+						<li class="nav-item"><a class="nav-link" href="galeri.html">Galeri Visi</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://lppm.stsrdvisi.ac.id" target="_blank">Riset dan Pengabdian</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://digilib.stsrdvisi.ac.id/" target="_blank">Perpustakaan</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="3000" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/Slider Alumni - Nur Paizir.jpg');">
+					
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item ">
+				<div id="home" class="first-section" style="background-image:url('images/Slider Survey Kemasan - Kedai Kooti.jpg');">
+					
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item ">
+				<div id="home" class="first-section" style="background-image:url('images/Slider Web Alumni Bidikmisi.jpg');">
+					
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/Slider Web Profesi Menjanjikan.png');">
+					
+				</div><!-- end section -->
+			</div>
+			
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<div class="col-md-12 services-left" style="background-color: #424141;padding: 10px 0 0 0">
+		<div class="table-responsive">          
+			<table class="table table-bordered" border="1" >
+				<tbody class="tbl" >
+					<tr>
+						<p align="center" style="color: white; font-size: 20px;">
+							<a style="color: white" href="download.html" target="_blank">Download dokumen</a>   |   <a style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLSdlXisrIC2ltONMFFIApO_bMerZtYRXDpv34X4YHnt1-9guHg/viewform" target="_blank">Legalisir</a> 
+						</p>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="overviews" class="section wb">
+		<div class="container">
+			<div class="section-title row text-center">
+				<div class="col-md-8 offset-md-2">
+					<h3><i>Creativity for Positive Changes</i></h3>
+					
+				</div>
+			</div><!-- end title -->
+
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="post-media wow fadeIn">
+						<img src="images/Pameran DISKOMFEST 1.jpg?v1" alt="" class="img-fluid img-rounded">
+					</div><!-- end media -->
+				</div><!-- end col -->
+
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+					<div class="message-box">
+						<h2> KIPO IKI OPO karya Delegasi STSRD VISI dalam Pameran DISKOMFEST #8 Gado-Gado</h2>
+						<p style="text-align: justify;">Persoalan waktu dan pengetahuan. Kita tidak bisa kembali kepada masa lalu, tidak bisa juga meminta untuk mengulang waktu yang sama. Bahkan tidak bisa merekam ingatan semua kejadian yang telah terjadi karena keterbatasan kemampuan, perubahan kebiasaan, serta usia yang semakin menua. Namun kita bisa belajar dan memaknai sebagai bentuk pengalaman dari kenangan ketika suatu saat kembali menghadapi kondisi yang serupa
+							Peninggalan merupakan bentuk warisan sejarah yang tersisa dan tidak boleh ditinggalkan. Peninggalan bisa jadi penanda bahwa pernah terjadi sesuatu di masa lampau. Berbekal kumpulan catatan-catatan sejarah, baik yang bisa baca melalui dinding-dinding relief, atau yang dibukukan maupun digital dengan bentuk yang bermacam-macam. Kita bisa mendapatkan pengetahuan atas kejadian yang telah terjadi pada masa lampau. Membaca sejarah juga bisa diperoleh dari orang yang memiliki pengetahuan lebih luas atau pandai memahami bidang tersebut. Lalu bagaimana dengan budaya, kekayaan dari sektor sandang, pangan dan papan yang sudah diwariskan kepada kita agar bertahan dan tidak lekang oleh zaman sekalipun?<br>
+							<span id="dots">...</span><span id="more"><br> Sejak mewabahnya pandemi Covid-19 banyak mempengaruhi berbagai sektor dan tatanan kehidupan, yang salah satunya pada sektor perdagangan membuat UMKM mengalami kesulitan untuk mempertahankan usahannya. Fenomena ini menyadarkan kami bahwa di sekitar kita pun masih banyak pengusaha-pengusaha kecil yang tetap bertahan dengan keterbatasannya ditengah masa pandemi. Mereka ini tidak hanya bertahan untuk menghidupi kehidupannya sehari-hari. Namun dengan setia mempertahankan lokalitas yang sudah semakin digeser zaman masih harus juga digempur pandemi. Maka beradaptasi dengan mengenalkan media baru, dapat menjadi salah satu cara untuk bertahan. Sehingga dari sini kami melihat celah untuk mengambil peran memberdayakan lokalitas melalui sudut pandang desain komunikasi visual.<br>
+								<img src="images/Pameran DISKOMFEST 3.jpg" class="img-fluid img-rounded" />
+								Melalui pameran karya DISKOMFEST Gado-Gado yang telah berlangsung pada 5 – 10 April 2021 di Kotagedhe. Tim Delegasi STSRD VISI pun ikut serta memamerkan karya dengan judul “KIPO IKI OPO” yang diimplementasikan menjadi dua karya berupa Ambient Media (signage) dan Infografis yang keduanya saling berhubungan satu sama lain. Tim delegasi STSRD VISI ini beranggotakan 8 mahasiswa diantaranya Happy Rolitasari, Salma Nurfijriana, Adhitya Andinov, Didik Wibowo, Sabdo Bagus Pinandhito, Yusron Sidi, Muhammad Hanif Faisal Zain serta Muhamad Rizky Abdullah.<br>
+								Meniti sejarah dan perkembangan Kipo yang sangat erat kaitannya dengan wilayah Kotagede, terutama Pasar Kotagede sebagai lingkungan potensial dan aktual yang setiap harinya ramai oleh interaksi di antara kebiasaan baru yang harus diperhatikan sebagai bentuk adaptasi mewabahnya pandemi Covid-19. Karya Ambient Media (signage) sebagai representasi yang dapat direspon secara langsung oleh masyarakat atas kehadiran media baru. Dalam ini terdapat 3 kubus yang disusun secara vertikal dengan setiap kubusnya memiliki 4 sisi yang berbeda-beda informasinya.<br>
+								<img src="images/Pameran DISKOMFEST 2.jpg" class="img-fluid img-rounded" />
+								Sedangkan karya Infografis berupa 6 panel dengan tiga topik pembahasan yang merepresentasikan visual Kipo. Berisi informasi perkembangan Kipo yang dahulunya diketahui sebagai makanan istimewa zaman Kerajaan hingga dapat dikenal dan dinikmati oleh masyarakat umum, beserta upaya memberdayakan transformasi media baru (digital) untuk mempertahankan keberadaan penjualan Kipo ditengah pandemi.<br>
+								Dokumentasi rangkaian proses pembuatan karya ini sudah dapat disaksikan pada youtube <a href="https://youtu.be/UfREYBzTMIk" style="font-family: 'Rubik', sans-serif; font-size: 14px; color: blue;" target="_blank">STSRD VISI</a>  
+							</span></p>
+
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+							<button onclick="myFunction()" id="myBtn">Read more</button>
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+				</div>
+
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Tidak Ada Batasan Umur untuk Belajar</h2>
+							<p style="text-align: justify;">Agatha Gita Christanti (Mahasiswi Beasiswa KIP Kuliah S1_2020) lulus SMKN 5 di Yogyakarta tahun 2018, karena keterbatasan biaya setelah lulus memilih untuk bekerja di sebuah perusahaan Jewerly di kota Bandung. Setelah 2 tahun bekerja ia mulai merenung , ia merasa kurang mendapat ilmu di tempat kerja, Agatha berkeinginan kuat untuk kuliah. Kemudian ia mencari-cari informasi Beasiswa KIP Kuliah, dan menemukan program KIP Kuliah di DKV STSRD VISI dan resign dari tempat kerjanya, kembali ke kampung halaman kota Yogyakarta tercinta. Hari ini ia bersyukur dapat kuliah S1 gratis di STSRD VISI dengan beasiswa KIP, merasakan belajar & menikmati langsung kuliah DKV dengan tugas-tugas kuliah yang  menantang kreativitasnya . Karena pandemi sudah 2 semester ini kuliah berlangsung secara online, tetapi Agatha tetap bersemangat. Ia berharap ada banyak kawan alumni SMA/SMK yang memanfaatkan Beasiswa KIP Kuliah di STSRD VISI, “Tidak ada batasan umur untuk belajar, selagi masih ada kesempatan kenapa tidak kita coba”...hwaiting !!!</p>
+							
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+					
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/AgathaGita-11201002 - Foto.jpg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+				</div>
+				
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/Open Commission.jpg?v1" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2> “Open Commission!” Peluang, Kesiapan, dan Kegigihan</h2>
+
+							<p style="text-align: justify;">Cukup banyak mahasiswa dan mahasiswi Desain Komunikasi Visual STSRD VISI yang sembari kuliah juga mengisi kegiatannya dengan hal positif. Mulai dari mengikuti kegiatan online, perlombaan, dan memberanikan diri terjun menghadapi clien dengan membuka jasa terkait desain komunikasi visual atau biasa disebut “Open Commision”. <br>
+								Berikut ini hasil wawancara kepada akun  Instagram <a href="https://www.instagram.com/riannon_unicorn/" style="font-family: 'Rubik', sans-serif; font-size: 14px; color: blue;" target="_blank">@riannon_unicorn</a>  salah satu mahasiswi STSRD VISI yang aktif dalam Open Commision. Bermula dari membaca peluang, mempersiapkan diri, dan bertahan dalam membagi waktu dengan tugas-tugas kuliahnya.<br>
+								Awalnya iseng buat personal project dengan membuat artwork potrait dirinya, tetapi malah banyak respon positif dari followers instagram. Lalu Ia tanya kepada teman online yang memiliki gaya ilustrasi serupa yaitu Children Illustration tentang harga dan bagaimana memasarkannya. Selain itu dia juga mengamati illustrator handal lainnya tentang bagaimana mereka mempromosikan artwork-nya / Open Commission. Ada banyak ragam open commission untuk orang lain, misalnya untuk hadiah ulang tahun, hadiah anniversary untuk pacar, hadiah pernikahan, dan hadiah wisuda, dan kebetulan  dia menyukai hal yang “uwu” (romance/ can read : Unhappy Without U) lalu dia mencoba buat ilustrasi dengan tema seperti itu dan banyak yang tertarik.<br>
+								Setelah peluang didapat, persiapannya adalah membuat konten promosi berupa cara order di Instagram story dan pricelist card. Untuk  membagi waktu dengan tugas-tugas kuliah dia biasanya dilakukan ketika libur kuliah, namun tetap saja ada orang yang direct message (DM) dia di IG ketika masa kuliah. Biasanya Ia membuat timeline schedule untuk mempermudah mengerjakan dan membagi waktunya.<br>
+								Harapan kedepan, dengan kreativitas membaca peluang, mempersiapkan diri, dan kegigihan mencoba Open Commision bisa menjadi modal yang digunakan mahasiswa dan mahasiswi STSRD VISI untuk mempesiapkan diri meraka masuk ke dunia kreatif. <br>
+							Dengan adanya Open Commision tersebut, diharapkan setelah mereka lulus bisa menjadi bekal yang terkait dalam bidang pekerjaannya dan tentunya bekal kreativitas untuk perubahan positif.</p>
+
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Syawalan/Halal Bi Halal STSRD VISI</h2>
+							<p style="text-align: justify;">Ibadah Puasa di bulan Ramadhan tahun 2021 telah selesai dengan dirayakannya Hari Raya Idul Fitri pada 1 Syawal 1442 H. Momen ini kemudian ditutup dengan kegiatan Syawalan/Halal Bi Halal untuk kalangan internal STSRD VISI yang bertujuan untuk mempererat tali silaturahmi sesama pegawai, dosen, dan tenaga pendidik, saling memaafkan, meningkatkan kinerja dan kerjasama guna menyongsong masa depan yg lebih baik di masa pandemi.</p>
+							
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+					
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/syawalan2021.jpg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/vaksin.jpeg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Program Vaksinasi COVID-19 STSRD VISI INDONESIA</h2>
+
+							<p style="text-align: justify;">Program vaksinasi covid-19 yang pertama pada 6 April 2021 dan yang kedua pada 4 Mei 2021 telah diikuti oleh kampus STSRD VISI INDONESIA beserta 28 Perguruan Tinggi Swasta di lingkungan L2DIKTI Wilayah V Yogyakarta demi mendukung visi Kementrian Pendidikan dan Kebudayaan dalam menjaga layanan publik agar dapat berjalan maksimal. Penyelenggaraan vaksin covid-19 dilakukan dengan menerapkan protokol kesehatan secara ketat dari awal hingga akhir kegiatan. Keikutsertaan dosen, tenaga kependidikan dan karyawan untuk vaksinasi covid-19 dilakukan kampus STSRD VISI INDONESIA sebagai upaya pencegahan penyebaran virus covid-19 di lingkungan kampus.</p>
+
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Sidang Tugas Akhir Mahasiswa D3 dan S1 DKV Visi Dari UMKM, Branding, hingga Wisata Sejarah</h2>
+							<p style="text-align: justify;">Berakhirnya perkuliahan mahasiswa tingkat akhir di semester ganjil 2020/2021 ditutup dengan terujinya 26 mahasiswa tingkat akhir (3 mahasiswa D3 dan 23 mahasiswa S1) pada sidang tugas akhir yang dilaksanakana secara online dan tatap muka.</p>
+							<p style="text-align: justify;">Adanya pandemi beberapa mahasiswa tingkat akhir kembali ke daerahnya untuk meminimalisir penyebaran virus covid-19 dan dapat melaksanakan sidang tugas akhir secara online. Sedangkan beberapa mahasiswa yang berdomisili di Yogyakarta dapat melakukan sidang tugas akhir secara tatap muka namun tetap mematuhi standar protokol kesehatan STSRD VISI. Sidang tugas akhir inipun dapat berjalan lancar, memuaskan, dan dengan hasil yang maksimal. Tema yang diangkat untuk tugas akhir inipun cukup beragam dari UMKM, Tempat Wisata, Kebudayaan, Branding, dll. Harapan dari setiap mahasiswa sidang tugas akhir berupa adanya kemanfaatan ilmu yang telah diterima selama di bangku perkuliahan dan dapat memberikan manfaat untuk sekelilingnya.</p>
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+					
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/Sidang TA 2020-2021.jpg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/umkm_diy.jpg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Sumbangsih Positif DKV VISI pada 26 UMKM DIY</h2>
+							<p style="text-align: justify;">DKV VISI bermitra dengan Koperasi Pemasaran Karya Persada Sejahtera membranding logo 26 UMKM di DIY (Yogya Kota, Kab. Bantul, Kab. Sleman, Kab. Gunung Kidul, dan Kab. Kulon Progo). Dari 112 UMKM yang mendaftar, dipilih 26 UMKM yang layak dibantu. Terdiri atas jenis UMKM : Kuliner, Kerajinan, dan Jasa.</p>
+							<p style="text-align: justify;">Diketuai oleh Dwisanto Sayogo, M.Ds selaku Ketua Jurusan DKV VISI dengan Dinta Ampunia Basyar, SE selaku Ketua Koperasi Persada Sejahtera. Karena pandemi semua kegiatan dilakukan secara online, mulai dari pertemuan awal dengan zoom meeting, dan diskusi di group media sosial. Tahap pertama menghasilkan 26 Logo UMKM yang langsung dapat dimanfaatkan untuk branding UMKM.</p>
+
+							<p style="text-align: justify;"> Tahap ke-2 program dilanjutkan dengan branding UMKM melalui media sosial Instagram yang akan dimulai pada bulan maret 2021. Hasil kegiatan ini melatih mahasiswa, dosen, dan UMKM untuk saling belajar menyatukan beragam ilmu dan latar belakang menjadi sebuah kegiatan branding UMKM yang aplikatif.</p>
+
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Cinelog Juara 1 Video Ads ADUINFEST 2020</h2>
+							<p style="text-align: justify;">Cinelog, Unit Kegiatan Mahasiswa STSRD VISI di bidang film meraih penghargaan Juara 1 pada ADUINFEST 2020 pada kategori Video Ads.</p>
+
+							<p style="text-align: justify;">Dikomando oleh Brian Alisahada dengan tim yang hebat antara lain Agus Aulial Huda, Nico Milenio, Anissa Julia, Mulan, Amanda, dkk menorehkan prestasi luar biasa.
+								Masa pandemi ini tidak menyurutkan mereka untuk berprestasi. Pengambilan gambar dilakukan sebelum masa pandemi ini benar-benar membuahkan hasil yang luar biasa.
+							Di bawah pembinaan Bapak Dwisanto Sayogo, Cinelog tidak pernah berhenti berkarya dan selalu mengikuti kejuaraan. Inilah buah kerja keras mereka. Bravo Cinelog. Bravo STSRD VISI!</p>
+
+							<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+						</div><!-- end messagebox -->
+					</div><!-- end col -->
+					
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/cinelog-1.jpeg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+				</div>
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="post-media wow fadeIn">
+							<img src="images/pelangi-1.jpeg" alt="" class="img-fluid img-rounded">
+						</div><!-- end media -->
+					</div><!-- end col -->
+					
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+						<div class="message-box">
+							<h2>Perubahan Positif untuk Masyarakat</h2>
+							<p style="text-align: justify;">Tim Pengabdian dosen dan mahasiswa pada 20 Desember 2019 kemarin menyerahkan karya hasil pengabdian kepada Pengurus Konservasi
+							Penyu Pantai Pelangi.</p>
+
+							<p style="text-align: justify;"> Berangkat dari keprihatinan dimana Pantai Pelangi yang diapit oleh Pantai Cemara Sewu dan Pantai Depok tidak mendapatkan kunjungan wisata
+								sepesat pantai-pantai bersebelahan, serta potensi wisata salah satunya yaitu konservasi Penyu Lekang yang termasuk spesie langka,
+								tim pengabdian membuahkan karya branding tujuang wisata atau <i>destination branding<i></p>
+
+									<!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+								</div><!-- end messagebox -->
+							</div><!-- end col -->
+							
+						</div><!-- end row -->
+					</div><!-- end container -->
+				</div><!-- end section -->
+
+				<section class="section lb page-section">
+					<div class="container">
+						<div class="section-title row text-center">
+							<div class="col-md-8 offset-md-2">
+								<h3>Our Milestone</h3>
+								<p class="lead">Bergerak Menuju Perubahan Positif</p>
+							</div>
+						</div><!-- end title -->
+						<div class="timeline">
+							<div class="timeline__wrap">
+								<div class="timeline__items">
+									<div class="timeline__item">
+										<div class="timeline__content img-bg-01">
+											<h2>1994</h2>
+											<p>LPK Visi Yogyakarta</p>
+										</div>
+									</div>
+									<div class="timeline__item">
+										<div class="timeline__content img-bg-02">
+											<h2>1996</h2>
+											<p>Akademi Desain Visi Yogyakarta (ADVY)</p>
+										</div>
+									</div>
+									<div class="timeline__item">
+										<div class="timeline__content img-bg-03">
+											<h2>2008</h2>
+											<p>SEKOLAH TINGGI SENI RUPA DAN DESAIN VISI INDONESIA (STSRD VISI)</p>
+											<p>Akreditasi Institusi B</p>
+											<p>D3 Desain Komunikasi Visual (terakreditasi B)</br>
+											S1 Desain Komunikasi Visual (terakreditasi B)</p>
+										</div>
+									</div>
+									<div class="timeline__item">
+										<div class="timeline__content img-bg-04">
+											<h2>2024</h2>
+											<p>Lulusan Berdaya Saing Tingkat ASEAN</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div id="overviews" class="section wb">
+					<div class="container">
+						<hr class="invis"> 
+						<class="active fade show">
+						<div class="row" style="padding-left:10%"> 
+							<div class="col-lg col-md-6 col-12">
+								<div class="blog-item">
+									<div class="image-blog">
+										<img src="images/d3-1.jpg" alt="" class="img-fluid">
+									</div>
+									
+									<div class="blog-title">
+										<h2><a href="#" title="">D3 DKV</a></h2>
+									</div>
+						<!-- <div class="blog-button">
+							<a class="hover-btn-new orange" href="#"><span>Read More<span></a>
+							</div> -->
+						</div>
+					</div><!-- end col -->
+
+					<div class="col-lg col-md-6 col-12">
+						<div class="blog-item">
+							<div class="image-blog">
+								<img src="images/s1-1.jpg" alt="" class="img-fluid">
+							</div>
+							<div class="blog-title">
+								<h2><a href="#" title="">S1 DKV</a></h2>
+							</div>
+						<!-- <div class="blog-button">
+							<a class="hover-btn-new orange" href="#"><span>Read More<span></a>
+							</div> -->
+						</div>
+					</div><!-- end col -->
+				</div><!-- end row -->
+			</div>
+		</div><!-- end container -->
+	</div><!-- end section -->
+	
+	<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/alumni/Foto Background Testimoni.jpg');">
+		<div class="container">
+			<div class="section-title text-center">
+				<h3>Testimonials</h3>
+				<p>Sekolah Tinggi Seni Rupa dan Desain Visi Indonesia (STSRD VISI)</p>
+			</div><!-- end title -->
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="testi-carousel owl-carousel owl-theme">
+						<div class="testimonial clearfix">
+							<div class="testi-meta">
+								<img src="images/alumni/Testimoni_Risang Agung Bulet.png" alt="" class="img-fluid">
+								<h4>Risang Agung Kurniawan</h4>
+								<h5>Mahasiswa Beasiswa KIP Kuliah D3_2020</h5>
+							</div>
+							<div class="desc">
+								<h3><i class="fa fa-quote-left"></i>Mahasiswa Beasiswa KIP Kuliah, Harus Selalu Tepat Waktu dengan Nilai Terbaik</h3>
+								<p class="lead" style="text-align: justify;">Menjadi mahasiawa KIP-Kuliah tidak mudah, karena mahasiswa KIP-Kuliah itu berbeda dengan mahasiawa-mahasiswa lain/non beasiswa. Kita selalu diingatkan agar selalu bersikap baik. <br>
+									Rasa capek, lelah dan pusing selalu menyertai setiap hari ketika banyak tugas perkuliahan yang harus diselesaikan. Banyaknya tugas dengan deadline berbarengan membuat saya kadang kuwalahan mengatur waktu untuk mengerjakan. Saya  dituntut untuk selalu mengumpulkan tugas dengan tepat waktu dan dengan hasil yang bagus tentunya, membuat saya harus kerja lebih ekstra untuk menyelesaikannya. Pada akhirnya saya menyadari bahwa semua kewajiban & tanggung jawab untuk “Bekerja Lebih Keras” adalah resiko menjadi mahasiswa KIP-Kuliah di STSRD VISI, tentunya untuk mendapatkan masa depan yang lebih baik nanti.
+								</p>
+							</div>
+							<!-- end testi-meta -->
+						</div>
+						<!-- end testimonial -->
+						<div class="testimonial clearfix">
+							<div class="testi-meta">
+								<img src="images/alumni/Testimoni_Ayu Edycta.png" alt="" class="img-fluid">
+								<h4>Ayu Edtyca</h4>
+								<h5>DKV D3_2018</h5>
+							</div>
+							<div class="desc">
+								<h3><i class="fa fa-quote-left"></i> Kenapa gue akhirnya mutusin kuliah DKV? DKV tuh warbyasah sekalehh pemirsa...</h3>
+								<p class="lead" style="text-align: justify;">Ilmu yang gue dapat di DKV STSRD VISI tuh lengkap banget, dari photography, videography, advertising, branding, design grafis, teknik cetak (manual & digital) dan masih banyak lagi. Gue tipe orang yang gampang jenuh terhadap sesuatu, jadi DKV inshaAllah adalah pilihan yang tepat buat karir gue di industry creative. Gue gaakan mati gaya di saat gue bosen sama satu profesi. Karna ilmu yang diajarkan banyak.</p>
+							</div>
+							<!-- end testi-meta -->
+						</div>
+						<!-- end testimonial -->
+
+						<div class="testimonial clearfix">
+							<div class="testi-meta">
+								<img src="images/alumni/Testimoni_Endri Wiyono.png" alt="" class="img-fluid">
+								<h4>Endri Wiyono</h4>
+								<h5>DKV D3_2018</h5>
+							</div>
+							<div class="desc">
+								<h3><i class="fa fa-quote-left"></i>No Rest for The Young With work hard i belive my dream come thrue</h3>
+								<p class="lead" style="text-align: justify;">Kuliah sambil bekerja sudah menjadi takdir Tuhan yang harus ku jalani, karena keterbatasan ekonomi keluargaku. Hal ini membuat aku bertekad untuk menjadi mandiri. Diterima kuliah di DKV VISI adalah awal perjuangan yang lebih berat, dimana komitmen & kesungguhanku di uji di sini. Musuh yang kulawan di sini adalah kemalasan, rasa capek, ngantuk, keterbatasan waktu, deadline tugas yang ketat, membagi pikiran & uang demi kelancaran study  yang harus kujalani.</p>
+							</div>
+							<!-- end testi-meta -->
+						</div>
+						<!-- end testimonial -->
+
+						<div class="testimonial clearfix">
+							<div class="testi-meta">
+								<img src="images/alumni/Testimoni_Tafrichy.png" alt="" class="img-fluid">
+								<h4>Muhamad Tafrihi Mubarok (Tafrichy)</h4>
+								<h5>DKV S1_2018</h5>
+							</div>
+							<div class="desc">
+								<h3><i class="fa fa-quote-left"></i>DKV is not just about graphic design, it's about how to live.</h3>
+								<p class="lead" style="text-align: justify;">Bagi pemuda desa seperti saya, mempunyai kesempatan untuk kuliah di kota besar adalah sebuah anugerah tersendiri, saya belajar banyak dari Dosen-dosen yang kompeten dan teman-teman Mahasiswa saya dari berbagai daerah. <br>Saya mengawali kuliah dengan bekerja sambilan sebagai freelance illustrator, seperti pandangan anak muda desa pada umumnya, tujuan kuliah dikota adalah agar bisa cari uang yang banyak dan karirnya menjadi sukses. Tetapi itu adalah pikiran dangkal saya sebelum kuliah di DKV VISI, diperkuliahan kami tidak hanya diajarkan tentang DKV, tetapi bagaimana bisa mengaplikasikannya untuk membantu masyarakat. <br>Bisa dilihat dari tugas-tugas kuliah mulai dari semester 3 sampai semester akhir, kami sering sekali ditugaskan untuk mencari UMKM dan lembaga kemasyarakatan, untuk membantu membranding Visualnya dan media promosinya, agar UMKM itu bisa berkembang menjadi lebih baik. Disini saya belajar tidak hanya tentang kualitas desain, tapi bagaimana dengan desain itu kita bisa bermanfaat untuk orang lain.
+
+									Sesuai dengan Motto kampus STSRD VISI "Creativity for Positive Changes".
+								</p>
+							</div>
+							<!-- end testi-meta -->
+						</div>
+						<!-- end testimonial -->
+
+						
+					</div><!-- end carousel -->
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>About US</h3>
+						</div>
+						<p align="justify">Sekolah Tinggi Seni Rupa dan Desain VISI Indonesia atau lebih dikenal dengan nama STSRD VISI memiliki Slogan <b> Creativity for Positive Changes “Kreativitas untuk perubahan Positif” </b> yang menjadi tolak ukur keberhasilan pendidikan di STSRD VISI</p>
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="https://www.facebook.com/stsrd.visi.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/stsrd_visi" target="_blank"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://www.twitter.com/stsrdvisijogja" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCjeas8q0wiJlhGogpb4oRNQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+							</ul><!-- end links -->
+						</div>
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Information Link</h3>
+						</div>
+						<ul class="footer-links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="alumni.html">Alumni</a></li>
+							<li><a href="galeri.html">Galeri Visi</a></li>
+							<li><a href="http://lppm.stsrdvisi.ac.id" target="_blank">Riset dan Pengabdian</a></li>
+							<li><a href="http://digilib.stsrdvisi.ac.id/" target="_blank">Perpustakaan</a></li>
+							<li><a href="download.html">Download</a></li><hr>
+						</ul><!-- end links -->
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+				
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<div class="widget clearfix">
+						<div class="widget-title">
+							<h3>Contact Details</h3>
+						</div>
+
+						<ul class="footer-links">
+							<li><a href="mailto:info@stsrdvisi.ac.id" target="_blank">info@stsrdvisi.ac.id</a></li>
+							<li><a href="https://www.stsrdvisi.ac.id">www.stsrdvisi.ac.id</a></li>
+							<li>Jl. Tamansiswa No. 150B Yogyakarta</li>
+							<li>Telp (0274) 377 787, 380 848</li>
+							<li><a href="https://api.whatsapp.com/send?phone=6287738297275&text=hi" target="_blank"> Whatsapp 0877 3829 7275</a></li><hr>
+						</ul><!-- end links -->
+					</div><!-- end clearfix -->
+				</div><!-- end col -->
+				
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer> <!-- end footer -->
+
+	<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/all.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			autoplay:true,
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+	<script>
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more"; 
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less"; 
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
+</body>
+</html>
